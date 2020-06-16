@@ -45,5 +45,5 @@ run_analysis<-function(){
         final<-summarize_each(by_act_sub, mean,-activity)
         rm(by_act_sub)
         
-        write.table(final,file="final.txt")
+        write.table(final,file="final.txt", row.names = FALSE)
 }
